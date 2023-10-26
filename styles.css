@@ -1,0 +1,141 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Graphik', sans-serif;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'ArticulatCF', sans-serif;
+}
+
+/* Set a background color and text color for the entire page */
+body {
+    background-color: #ffffff;
+    color: #2C2C2C;
+    font-family: 'Graphik', sans-serif;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #2C2C2C;
+    color: #fff;
+    padding: 10px 0;
+    font-family: 'ArticulatCF', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    font-family: 'ArticulatCF', sans-serif;
+    font-size: 1vw;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-family: 'ArticulatCF', sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Graphik', sans-serif;
+}
+
+/* Style the hero section */
+#hero {
+    text-align: center;
+    padding: 13vh 0;
+    font-family: 'Graphik', sans-serif;
+}
+
+#bigid {
+    font-size: 3vw;
+}
+
+#rotatingText {
+    animation: fade 6s infinite;
+    display: inline-block;
+    font-size: 9vw;
+}
+
+/* Style the other sections */
+section {
+    padding: 30px 0;
+    font-family: 'Graphik', sans-serif;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Graphik', sans-serif;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #2C2C2C;
+    color: #fff;
+    padding: 1vw 0;
+}
+
+a {
+    color: inherit;
+}
+
+a.visited {
+    color: inherit;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('Graphik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArticulatCF';
+    src: url("ArticulatCF-DemiBold.otf") format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
