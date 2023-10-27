@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00">
+    <title>I am Tahmidur</title>
+    <link rel="icon" type="image/x-icon" href="assets/favi.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <script>
+        document.addEventListener("mousemove", (e) => {
+            const customCursor = document.querySelector(".custom-cursor");
+            customCursor.style.left = e.clientX + "px";
+            customCursor.style.top = e.clientY + window.scrollY + "px";
+        });
+    </script>
+    <div class="custom-cursor"></div>
+    <div class="wrapper">
+        <header id="top">
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">[Work :: Portfolio]</a></li>
+                    <li><a href="https://github.com/rtahm/rtahm.github.io" target="_blank">Source Code</a></li>
+                </ul>
+            </nav>
+        </header>
+        <table>
+         <tr>
+            <div>
+             <td>
+               <div class="image-container">
+                  <a href="https://polyester-sheep-900.notion.site/UI-UX-Design-Research-c0faca211fa140e686bb7aca62a5ac9a?pvs=4">
+                        <img src="assets/uixr.png" width="50%" height="50%">
+                  </a>
+               </div>
+             </td>
+             <td>
+                  <div class="image-container">
+                     <a href="https://polyester-sheep-900.notion.site/Data-Visualizations-Visualizing-Rent-8f1b19e8d8d14226a3a3bc5f58388fdd?pvs=4">
+                           <img src="assets/gradient.png" width="50%" height="50%">
+                     </a>
+                  </div>
+             </td>
+             <td>
+               <div class="image-container">
+                 <a href="https://github.com/rtahm" target="_blank">
+                     <img src="assets/statcvoid.png" width="50%" height="50%">
+                 </a>
+               </div>
+             </td>
+            </div>
+         </tr>
+            
+     </table>
+
+    </div>
+    <script>
+        window.addEventListener("load", function() {
+            document.body.classList.add("loaded");
+        });
+    </script>
+</body>
+</html>

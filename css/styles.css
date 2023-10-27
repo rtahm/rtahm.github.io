@@ -1,0 +1,232 @@
+body, h1, h2, h3, p {
+    margin: 10;
+    padding: 10;
+    align-content: center;
+    font-family: 'Graphik', sans-serif;
+    line-height: 1.5;
+}
+ul, li {
+    margin: 10;
+    padding: 10;
+    align-content: center;
+    font-family: 'ArticulatCF', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #2C2C2C;
+    font-family: 'Graphik', sans-serif;
+    align-content: center;
+    opacity: 0; 
+    transition: opacity 1s linear;
+    cursor: none;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+::selection{
+    background-color: #ffbb3d;
+    color: white;
+}
+
+.custom-cursor{
+    position: absolute;
+    width: 15px; 
+    height: 15px; 
+    background-color: #ffbb3d; 
+    border-radius: 50%; 
+    pointer-events: none; 
+    z-index: 99999;
+    transition: transform 5s ease-in; 
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+header {
+    background-color: #2C2C2C;
+    color: #fff;
+    /* padding: 10px 0; */
+    font-family: 'ArticulatCF', sans-serif;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    font-family: 'ArticulatCF', sans-serif;
+    font-size: 1vw;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-family: 'ArticulatCF', sans-serif;
+    align-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Graphik', sans-serif;
+}
+
+#hero {
+    /* text-align: center; */
+    padding: 13vh 0;
+    /* font-family: 'Graphik', sans-serif; */
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Graphik', sans-serif;
+}
+
+#hero p {
+    font-size: 18px;
+    font-family: 'Graphik', sans-serif;
+}
+
+section {
+    padding: 30px 0;
+    font-family: 'Graphik', sans-serif;
+    align-content: center;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Graphik', sans-serif;
+    align-content: center;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    /* text-decoration: none;
+    text-align: center;
+    background-color: #2C2C2C;
+    color: #fff;
+    padding: 1vw 0;
+    font-family: 'Graphik', sans-serif; */
+    background-color: #2C2C2C;
+    color: #fff;
+    padding: 10px 0;
+    font-family: 'ArticulatCF', sans-serif;
+    margin-top: auto;
+}
+a {
+  color: inherit;
+  cursor: none;
+  text-decoration: none;
+}
+
+a:hover {
+    color: #ffd52c;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+a.visited{
+  color: #6afd57;
+}
+
+blockquote p {
+    padding: 1%;
+    background: #eee;
+    border-radius: 5px;
+    line-height: 1.8;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  10%{opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+#rotatingText {
+  animation: fade 6s infinite;
+  display: inline-block;
+  /* width: 100%; */
+  /* height: 250px; */
+  /* font-size: 80px; */
+  font-size: 9vw;
+
+}
+
+#bigid {
+    font-size: 3vw;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('Graphik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url("ArticulatCF-DemiBold.otf") format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Adjust this to your desired image width */
+    height: 100%; /* Adjust this to your desired image height */
+    transition: transform 0.3s ease-in-out;
+}
+  
+.image-container img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease-in-out;
+
+}
+
+.image-container:hover {
+transform: scale(1.2); /* Adjust the scale factor as needed to control the zoom level */
+}
+
+tr {
+    border: 1px solid #000; /* Set the border width and color as needed */
+}
+
+td, th {
+    border: 1px solid #000; /* Set the border width and color as needed */
+}

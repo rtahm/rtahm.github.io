@@ -2,43 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's Reaz Tahmidur Rahman</title>
-    <link rel="icon" type="image/x-icon" href="favi.ico">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00">
+    <title>I am Tahmidur</title>
+    <link rel="icon" type="image/x-icon" href="assets/favi.ico">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header id="top">
-        <nav>
-            <ul>
-                <li><a href="/dviz.html">Data Visualizations</a></li>
-                <li><a href="/uxd.html">UX/I</a></li>
-                <li><a href="/uxr.html">Youtube</a></li>
-                <li><a href="/about.html">Github</a></li>
-            </ul>
-        </nav>
-    </header>
+    <script>
+        document.addEventListener("mousemove", (e) => {
+            const customCursor = document.querySelector(".custom-cursor");
+            customCursor.style.left = e.clientX + "px";
+            customCursor.style.top = e.clientY + window.scrollY + "px";
+        });
+    </script>
+    <div class="custom-cursor"></div>
+    <div class="wrapper">
+        <header id="top">
+            <nav>
+                <ul>
+                    <li><a href="#">[Home]</a></li>
+                    <li><a href="/work.html">Work :: Portfolio</a></li>
+                    <li><a href="https://github.com/rtahm/rtahm.github.io" target="_blank">Source Code</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="hero" align="center">
-        <h3 id="bigid">I am <span id="rotatingText"></span></h3>
-        <script>
-            var identity = ['Reaz Tahmidur R.', 'a Developer', 'a Philosopher', 'a Designer', 'an Engineer', 'a thinker'];
-            var counter = 0;
-            setInterval(updateText, 6000);
+        <section id="hero">
+            <h3 id="bigid">I am <br> <span id="rotatingText"></span></h3>
+            <script>
+                var identity = ['a Learner', 'a Builder', 'a Philosopher', 'Reaz Tahmidur R.'   ];
+                var counter = 0;
+                setInterval(updateText, 6000);
 
-            function updateText() {
-                var rotatingText = document.getElementById('rotatingText');
-                rotatingText.textContent = identity[counter];
-                counter = (counter + 1) % identity.length;
-            }
+                function updateText() {
+                    var rotatingText = document.getElementById('rotatingText');
+                    rotatingText.textContent = identity[counter];
+                    counter = (counter + 1) % identity.length; 
+                }
 
-            updateText();
-        </script>
-    </section>
-
-    <section id="contact" align="center">
-        <p>Email: reaztahmidur@gmail.com</p>
-    </section>
-
+                updateText();
+            </script>
+        </section>
+        
+        <p><a href="mailto:reaztahmidur@gmail.com"><b><i>reaztahmidur@gmail.com</i></b></a></p>
+    </div>
+    <script>
+        window.addEventListener("load", function() {
+            document.body.classList.add("loaded");
+        });
+    </script>
 </body>
 </html>
